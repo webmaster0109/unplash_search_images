@@ -2,9 +2,10 @@ import streamlit as st
 import requests
 import io
 from PIL import Image
+from api_key import UNSPLASH_ACCESS_KEY
 
 # Your Unsplash API key
-UNSPLASH_ACCESS_KEY = "cR3xV4ZICrFDNXWeOsIwDpVlA3Rx65pjYz9-cZj0ea8"
+UNSPLASH_ACCESS_KEY = UNSPLASH_ACCESS_KEY
 
 def search_images(query, count=100):
     url = "https://api.unsplash.com/search/photos"
